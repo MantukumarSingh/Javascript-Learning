@@ -1,6 +1,22 @@
 /* Datatypes are of  different types in javaScript 
-=>
-    Number, bigInt , String , Boolean ,
+    01. Number
+    02. BigInt  
+    03. String
+    04. Boolean
+    05. Null
+    06. Undefined
+    07. Symbol
+    08. Object
+    
+    Number, bigInt , String , Boolean ,null , undefined , Symbol , Object
+    Number: represents numeric values, both integers and floating-point numbers. 
+    BigInt: represents large integers that cannot be represented by the Number data type.
+    String: represents text data, enclosed in single quotes, double quotes, or backticks (template literals).
+    Boolean: represents true or false values, often used in conditional statements. 
+    Null: represents the intentional absence of any object value, often used to indicate that a variable should have no value.
+    Undefined: represents a variable that has been declared but not assigned a value, automatically assigned to variables that are declared but not initialized.
+    Symbol: represents a unique and immutable value, often used as object property keys.    
+
 */
 console.log(3+3);
 // console.log(3+3) console.log(5+6);
@@ -25,11 +41,29 @@ console.log(price);
 
 let score = 33;
 console.log(score);
+// Number is a data type that represents numeric values in JavaScript.
+// It can be an integer or a floating-point number. 
+// JavaScript uses the IEEE 754 standard for representing numbers, which means it can handle both integers and floating-point numbers.
+// It is important to note that JavaScript does not have a separate data type for integers and floating-point numbers; both are represented using the Number data type.
+// JavaScript also has a special value called NaN (Not a Number) which is used  to represent a value that is not a valid number.
+// NaN is a special value that is returned when an operation cannot be performed on a number .
+// For example, dividing a number by zero will return NaN.  
+console.log(0/0); // NaN
+console.log(5/0); // Infinity       
+console.log(5/2); // 2.5
+console.log(5/3); // 1.6666666666666667   
+
 // BigInt data type
 let bigNumber = 1234567890123456789012345678901234567890n;
 console.log(bigNumber);
 // BigInt is used to represent large integers that cannot be represented by the Number data type.
 // It is denoted by appending 'n' to the end of the number. 
+// BigInt can be used for arithmetic operations just like regular numbers, but it is important to note that
+// BigInt and Number are different data types, and you cannot mix them in arithmetic operations without explicit conversion.
+let anotherBigNumber = BigInt(1234567890123456789012345678901234567890);
+console.log(anotherBigNumber);      
+// BigInt can also be created using the BigInt() constructor, which allows you to convert a regular number to a BigInt.     
+
 // String data type
 let name = "John Doe";
 console.log(name);
@@ -40,6 +74,7 @@ console.log(greeting);
 let templateLiteral = `Hello, ${name}!`;
 console.log(templateLiteral);
 // Template literals are used to create multi-line strings and can include expressions using ${} syntax.    
+
 // Boolean data type
 let isActive = true;
 console.log(isActive);
@@ -48,11 +83,13 @@ console.log(isAvailable);
 // Boolean is used to represent true or false values.
 // It is often used in conditional statements to control the flow of the program.       
 // Undefined data type
+
 let undefinedVariable;
 console.log(undefinedVariable);
 // Undefined is a data type that represents a variable that has been declared but not assigned a value
 // It is automatically assigned to variables that are declared but not initialized. 
 // Null data type
+
 let nullVariable = null;
 console.log(nullVariable);
 // Null is a data type that represents the intentional absence of any object value.
@@ -64,8 +101,6 @@ console.log(nullVariable);
 
 
 
-let name = "Mantu";
-console.log(name)
 
 
 let isloggedIn = false;

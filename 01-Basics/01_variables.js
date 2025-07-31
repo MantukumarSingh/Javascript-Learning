@@ -1,11 +1,11 @@
-/*
-Variables are used to store data . 
+
+/*Variables are used to store data . 
 Data is nothing it is collection of information . 
 There are three types of variables in javaScript .
 
 const, let , var 
 
-By suing this we can store  Data , which will allocate some memory space to allocate date with variable  name .
+By uing this we can store  Data , which will allocate some memory space to allocate date with variable  name .
 Variable name is always start with small letter.
 
 Let's see ex:-
@@ -24,3 +24,5 @@ console.log(accountNumber);
 console.log(accountState);
 
 console.table([accountId,accountType,accountNumber,emailId,mobileNumber,accountState,,accountCity]);
+
+// Varibles are used to define value name .

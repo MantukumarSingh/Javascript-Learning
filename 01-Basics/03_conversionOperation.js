@@ -41,10 +41,7 @@ let numFromBool = Number(boolTrue);
 console.log(numFromBool); // 1     
 
 // Convert boolean false to number
-let bollfalse = false;
-let numFromBollFalse = Number (bollfasle);
-console.log(numFromBollFasle);
-// 0
+
 
 // Convert null to number
 let nullValue = null;
@@ -55,7 +52,7 @@ console.log(nullFromNum);
 // Convert undefined to number
 let undefinedValue = undefined;
 let undefinedFromNum = Number(undefinedValue);
-conmsole.log(undefinedFromNum);
+console.log(undefinedFromNum);
 // NaN
 
 // Convert NaN to string
@@ -97,5 +94,80 @@ console.log(emptyStrBool2); // false
 
 console.log(typeof emptyStrBool2); // "boolean"
 console.log(tyoeof(empStrBool2)); // "boolean"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

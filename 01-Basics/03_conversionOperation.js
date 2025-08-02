@@ -113,7 +113,10 @@ let fullName = fisrtName + lastName;
 console.log(fullName); // MantuKumar
 console.log(`"hello" + "  " + ${fisrtName} + " " + ${lastName}`); // "hello" + "  " + Mantu + " " + Kumar
 
+
 let isLoggedIn = true;
 let numFromIsloggedIn = Number(isLoggedIn);
 console.log(numFromIsloggedIn);
 
+let strNumber = String(numFromIsloggedIn);
+console.log(strNumber); // "1"

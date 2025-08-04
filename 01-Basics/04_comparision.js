@@ -72,4 +72,4 @@ This is why null >= 0 evaluates to true, while null > 0 evaluates to false
 
 
 /* The reason is that an equality check == and compariosn > , < , >= , <= work differently . */
-/* Comparison convert null to a number, treating it as 0. That's why null >= 0and null>0 is false */
+/* Comparison convert null to a number, treating it as 0. That's why null >= 0 and null > 0 is false */

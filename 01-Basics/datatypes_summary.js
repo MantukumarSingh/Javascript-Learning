@@ -67,14 +67,24 @@ For Example :
 */
  let arr = [1,2,3];
  let personDetails ={
-    Name: "Mantu",
-    Age: 32,
-    Occupation: "Software Engineer",
-    Address: "Ramgarh,Jharkhand" ,
-    Hobbies: [Reading, coding, Video_Editing,travelling],
+      name: "Mantu",
+      age: 25,
+      isStudent: true ,
+      hobbies: ["reading", "coding", "gaming"] 
  }
 
  let personDetails2 = personDetails; // Reference to the same object
 // Example of comparing reference types:
-console.log(arr === [1, 2, 3]); // false (different arrays)
+// console.log(arr === [1, 2, 3]); // false (different arrays)
 console.log(personDetails === personDetails2); // true (same reference)
+console.log(typeof (arr)); // "object"
+console.log(typeof (personDetails)); // "object"
+
+function myfunction() {
+      console.log("This is a function");
+}
+
+console.log(typeof (myfunction)); // "function"
+let myFunction2 = myfunction; // Reference to the same function      
+console.log(myfunction === myFunction2); // true (same reference)
+

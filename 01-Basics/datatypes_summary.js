@@ -1,5 +1,13 @@
-const { memo } = require("react");
-
+// JavaScript Data Types Summary
+// This code provides a summary of JavaScript data types, including primitive and reference types,
+// their characteristics, and how they are stored in memory.
+// It also includes examples of how to work with these data types and how they behave in comparisons  
+// and memory management.
+// and how they are compared in JavaScript.
+// The code is structured to illustrate the differences between primitive and reference types,
+// their mutability, and how they are stored in memory.
+// It also includes examples of how to work with these data types and how they behave in comparisons.
+// This code is intended for educational purposes to help learners understand JavaScript data types and memory management.
 
 /*
 Data types are of two types: primitive and reference types.
@@ -110,10 +118,10 @@ let str1 = "hello"; // Primitive type stored in stack memory
 let obj1 = { name: "Alice" }; // Reference type stored in heap memory, with a reference in stack memory
 let arr1 = [1, 2, 3]; // Reference type stored in heap memory, with a reference in stack memory        
 // Example of stack and heap memory
-console.log(num); // 42
-console.log(str); // "hello"
-console.log(obj); // { name: "Alice" }
-console.log(arr); // [1, 2, 3]                  
+// console.log(num); // 42
+// console.log(str); // "hello"
+// console.log(obj1); // { name: "Alice" }
+// console.log(arr1); // [1, 2, 3]                  
 
 
 //  stack memory is used for primitive types and function calls,
@@ -129,4 +137,74 @@ console.log(arr); // [1, 2, 3]
 // In summary, primitive types are stored in stack memory,
 // while reference types are stored in heap memory with a reference in stack memory.
 
-//  while reference types are mutable and compared by reference.      
+//  while reference types are mutable and compared by reference.     
+
+// Understanding these differences is essential for effective memory management and performance optimization in JavaScript applications.
+module.exports = {
+  num,
+  str,
+  // arr,
+  // personDetails,
+  // personDetails2,
+  // myfunction,
+  // myFunction2,
+  // obj1,
+  // arr1
+}; 
+// The code above provides a comprehensive overview of JavaScript data types, their characteristics, and how they are stored in memory.
+// It explains the differences between primitive and reference types, their mutability, and how they are compared.
+// The examples illustrate how to work with these data types and how they behave in comparisons.   
+
+
+// This knowledge is crucial for understanding JavaScript's type system and memory management, which can help developers write more efficient and effective code.
+// The code also highlights the importance of understanding how JavaScript handles comparisons, especially with null and undefined values, to avoid unexpected results.
+/*********************************************************************************************/
+let myYouTubeChannel = "Mantu's Channel";
+let newChannelName  = myYouTubeChannel;
+newChannelName = "The's Channel";
+
+console.log(newChannelName);
+
+let employeeDetails = {
+      name: "Mantu",
+      age: 25,
+      isStudent: true,
+      hobbies: ["reading", "coding", "gaming"]
+};
+let employeeDetails2 = employeeDetails; // Reference to the same object
+employeeDetails2.name = "Mantu Kumar Singh"; // Modifying the object through the reference
+console.log(employeeDetails.name); // "Mantu Kumar Singh"
+// Example of modifying an object through a reference
+console.log(employeeDetails2.name); // "Mantu Kumar Singh"
+console.log(employeeDetails2); // { name: "Mantu Kumar Singh", age: 25, isStudent: true, hobbies: ["reading", "coding", "gaming"] }
+console.table([employeeDetails, employeeDetails2]);
+
+console.log(typeof employeeDetails); // "object"
+console.table(employeeDetails); // Displays the object in a table format;
+
+// Example of modifying an array through a reference
+let myArray = [1, 2, 3];
+let myArray2 = myArray; // Reference to the same array
+myArray2.push(4); // Modifying the array through the reference
+console.log(myArray); // [1, 2, 3, 4]
+console.log(myArray2); // [1, 2, 3, 4]
+console.table(myArray); // Displays the array in a table format
+console.table(myArray2); // Displays the array in a table format
+console.log(typeof myArray); // "object"
+console.log(typeof myArray2); // "object"
+// Example of comparing two different objects
+let obj3 = { name: "Alice" };
+let obj4 = { name: "Alice" }; // Different object with the same properties
+console.log(obj3 === obj4); // false (different references)
+console.log(obj3.name === obj4.name); // true (same property values)  
+// Example of comparing two different arrays
+let arr2 = [1, 2, 3];
+let arr3 = [1, 2, 3]; // Different array with the same elements
+console.log(arr2 === arr3); // false (different references)
+console.log(arr2[0] === arr3[0]); // true (same element values)
+// Example of comparing a primitive type with a reference type
+let num2 = 42; // Primitive type
+let obj5 = { value: 42 }; // Reference type with a property value
+console.log(num2 === obj5.value); // true (comparing primitive value with property value)
+
+

@@ -208,3 +208,23 @@ let obj5 = { value: 42 }; // Reference type with a property value
 console.log(num2 === obj5.value); // true (comparing primitive value with property value)
 
 
+/*  What is Stack Memory and Heap Memory  */
+// Stack Memory: Used for primitive types and function calls.
+// It is a region of memory that stores variables and function calls in a last-in, first-out (LIFO) manner.
+// Stack memory is faster to access than heap memory, but it has a limited size.
+// When a function is called, a new stack frame is created, and when the function returns, the stack frame is removed.
+// Primitive types like numbers, strings, and booleans are stored directly in stack memory.
+// For example, when you declare a variable like `let x = 10;`, the value `10` is stored directly in stack memory.
+// Stack memory is automatically managed by JavaScript, and variables are removed from the stack when they go out of scope.
+// It is important to note that stack memory is not suitable for storing large or complex data structures, as it
+// has a limited size and can lead to stack overflow errors if too much memory is used. 
+
+// Heap Memory: Used for reference types like objects and arrays.
+// It is a region of memory that stores objects and arrays, which can be larger and more complex than primitive types.
+// Heap memory is slower to access than stack memory, but it can store larger and more complex data structures.
+// When you create an object or an array, JavaScript allocates memory in the heap and stores a reference to that memory in the stack.
+// For example, when you create an object like `let obj = { name: "Alice" };`, the object is stored in heap memory, and a reference to that object is stored in the stack.
+// Heap memory is dynamically managed, meaning that JavaScript can allocate and deallocate memory as needed.
+// It is important to manage heap memory carefully, as excessive memory usage can lead to performance issues and memory leaks.
+// JavaScript uses a garbage collector to automatically free up memory that is no longer needed, but developers should still be mindful of
+// how they use memory to avoid unnecessary allocations and deallocations.  

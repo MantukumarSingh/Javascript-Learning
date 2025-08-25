@@ -33,4 +33,37 @@ let newString = immutableString + ", World!"; // Creates a new string
 // Example of using string methods:
 let exampleString = "  JavaScript is awesome!  ";
 let trimmedString = exampleString.trim(); // Removes whitespace from both ends
-console.log(trimmedString);
+// console.log(trimmedString); // Outputs: "JavaScript is awesome!"(` `).
+
+// Example of string interpolations using template literals :
+let user = "Mantu" ;
+let welcomeMessage = `Hello , ${user}! welcome to JavaScript World. `;
+console.log(welcomeMessage);
+
+// Outputs: "Hello , Mantu! welcome to JavaScript World. "
+
+// Example of using escape characters in strings:
+let escapeString = "He said, \"JavaScript is awesome!\" \nLet's learn it.";
+console.log(escapeString);
+// Outputs:
+// He said, "JavaScript is awesome!"
+// Let's learn it.
+// Example of accessing characters in a string:
+let accessString = "JavaScript";
+let firstChar = accessString[0]; // 'J'
+let lastChar = accessString[accessString.length - 1]; // 't'
+console.log(`First Character: ${firstChar}, Last Character: ${lastChar}`);
+// Outputs: First Character: J, Last Character: t
+// Example of splitting a string into an array:
+let csvString = "apple,banana,cherry";
+let fruitsArray = csvString.split(","); // ['apple', 'banana', 'cherry]
+console.log(fruitsArray);
+// Outputs: ['apple', 'banana', 'cherry']
+// Example of joining an array into a string:
+let wordsArray = ["Hello", "World"];
+let joinedString = wordsArray.join(" "); // "Hello World"
+console.log(joinedString);
+// Outputs: "Hello World"
+
+
+

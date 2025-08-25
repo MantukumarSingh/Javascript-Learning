@@ -47,4 +47,4 @@ console.log(accountState);
 
 console.table([accountId,accountType,accountNumber,emailId,mobileNumber,accountState,,accountCity]);
 
-// Varibles are used to define value name .
+// Variables are used to define value name .

@@ -207,7 +207,7 @@ let num2 = 42; // Primitive type
 let obj5 = { value: 42 }; // Reference type with a property value
 console.log(num2 === obj5.value); // true (comparing primitive value with property value)
 
-
+/**********                                            ***********/
 /*  What is Stack Memory and Heap Memory  */
 // Stack Memory: Used for primitive types and function calls.
 // It is a region of memory that stores variables and function calls in a last-in, first-out (LIFO) manner.
